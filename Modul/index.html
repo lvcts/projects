@@ -1,109 +1,116 @@
-const jumbotron = document.getElementById("jumbotron");
-jumbotron.style.backgroundColor = "#5a5a5a";
-
-
-document.getElementById("hobby1").onclick = function () {
-  myFunction();
-};
-
-function myFunction() {
-  document.getElementById("hobby1").innerHTML =
-    "Hobbyku tentu saja belajar sesuatu yang baru dan menarik. Seperti belajar pemrograman tentunya.";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+.jumbotron {
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  background-color: black;
+  color: white;
 }
-document.getElementById("hobby2").onclick = function () {
-  myFunction1();
-};
-
-function myFunction1() {
-  document.getElementById("hobby2").innerHTML =
-    "Hobbyku yang lain yaitu fotography. Dengan melakukan hobby tersebut dapat menyalurkan stress yang ada pada fikiranku.";
+.coloum {
+  margin-top: 2vw;
+  margin-bottom: 4vw;
 }
-document.getElementById("hobby3").onclick = function () {
-  myFunction2();
-};
-
-function myFunction2() {
-  document.getElementById("hobby3").innerHTML =
-    "Aku merupakan seorang manusia biasa, tentu saja aku juga memiliki hobby menonton movie, anime, kdrma seperti wanita pada umumnya";
-}
-document.getElementById("hobby4").onclick = function () {
-  myFunction3();
-};
-
-function myFunction3() {
-  document.getElementById("hobby4").innerHTML =
-    "Selanjutnya, hobby yang sedikit merugikan namun dapat mempertahankan mental health adalah bermain game. Aku menyukai segala jenis game yang dapat bertahan di processor handphoneku";
-}
-document.getElementById("hobby5").onclick = function () {
-  myFunction4();
-};
-
-function myFunction4() {
-  document.getElementById("hobby5").innerHTML =
-    " Hobby yang paling kusukai setelah fotography adalah traveling. Meskipun kesempatan untuk mengimplementasikan hobby ini sangat sedikit tapi tetap saja sekali bercengkrama dengan alam rasanya luar biasa.";
-}
-document.getElementById("hobby6").onclick = function () {
-  myFunction5();
-};
-
-function myFunction5() {
-  document.getElementById("hobby6").innerHTML =
-    " Terakhir hobby yang tidak jelas asal usulnya adalah aku hobby memikirkan sesuatu yang rumit. Dalam suatu kasus fikiranku kadang memperdebatkan antara bumi bulat atau datar.";
+.row {
+  padding-top: 2vw;
+  color: white;
 }
 
-const row = document.getElementById("row")
-row.style.visibility = "hidden";
-if (row.onclick) {
-    row.style.visibility = "visibleconst jumbotron = document.getElementById("jumbotron");
-jumbotron.style.backgroundColor = "#5a5a5a";
-
-document.getElementById("hobby1").onclick = function () {
-  myFunction();
-};
-
-function myFunction() {
-  document.getElementById("hobby1").innerHTML =
-    "Hobbyku tentu saja belajar sesuatu yang baru dan menarik. Seperti belajar pemrograman tentunya.";
-}
-document.getElementById("hobby2").onclick = function () {
-  myFunction1();
-};
-
-function myFunction1() {
-  document.getElementById("hobby2").innerHTML =
-    "Hobbyku yang lain yaitu fotography. Dengan melakukan hobby tersebut dapat menyalurkan stress yang ada pada fikiranku.";
-}
-document.getElementById("hobby3").onclick = function () {
-  myFunction2();
-};
-
-function myFunction2() {
-  document.getElementById("hobby3").innerHTML =
-    "Aku merupakan seorang manusia biasa, tentu saja aku juga memiliki hobby menonton movie, anime, kdrma seperti wanita pada umumnya";
-}
-document.getElementById("hobby4").onclick = function () {
-  myFunction3();
-};
-
-function myFunction3() {
-  document.getElementById("hobby4").innerHTML =
-    "Selanjutnya, hobby yang sedikit merugikan namun dapat mempertahankan mental health adalah bermain game. Aku menyukai segala jenis game yang dapat bertahan di processor handphoneku";
-}
-document.getElementById("hobby5").onclick = function () {
-  myFunction4();
-};
-
-function myFunction4() {
-  document.getElementById("hobby5").innerHTML =
-    " Hobby yang paling kusukai setelah fotography adalah traveling. Meskipun kesempatan untuk mengimplementasikan hobby ini sangat sedikit tapi tetap saja sekali bercengkrama dengan alam rasanya luar biasa.";
-}
-document.getElementById("hobby6").onclick = function () {
-  myFunction5();
-};
-
-function myFunction5() {
-  document.getElementById("hobby6").innerHTML =
-    " Terakhir hobby yang tidak jelas asal usulnya adalah aku hobby memikirkan sesuatu yang rumit. Dalam suatu kasus fikiranku kadang memperdebatkan antara bumi bulat atau datar.";
-}
-";
-}
+  </style>
+</head>
+<body class="bg-dark font-monospace">
+  <div class="container-fluid">
+    <!-- NAvbar-->
+    <nav class="navbar navbar-dark" id="navbar">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Siti Zahra Salma</span>
+      </div>
+    </nav>
+    <!--Jumbotron-->
+    <div class="jumbotron text-center " id="jumbotron">
+      <!--Images-->
+      <img
+        src="https://scontent.fupg2-1.fna.fbcdn.net/v/t39.30808-6/234411552_1229058540853858_8649924542933551414_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHHuS6ufo26xpX7qk2j-se-T5wNPVNmpx9PnA09U2anH84WKYvUyAJRM9Cb8GCX2L7U7ISQuMTLQPftuNHVyyg3&_nc_ohc=qujnttBfBLEAX_xM3AR&_nc_zt=23&_nc_ht=scontent.fupg2-1.fna&oh=00_AT8h-Mpc9yvRudseHgpfOauRZz2y6uYzot5I8-WMoYewSw&oe=6232FED3"
+        class="img-thumbnail rounded-circle" alt="..." width="280">
+      <h1>Siti Zahra Salma</h1>
+      <p class="lead" id="lead">"Hellowww"</p>
+    </div>
+    <!--Container-->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <h3>Hobby</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-4">
+          <div class="coloum">
+            <img src="https://i.pinimg.com/564x/86/73/15/86731535bbd5bd14984d0a3f8ed57548.jpg"
+              class="bd-placeholder-img rounded-circle" alt="..." width="140" height="140">
+            <p class="text" id="hobby1">
+              <br>
+              ...
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="coloum">
+            <img src="https://i.pinimg.com/564x/82/ca/ab/82caab8fab08a4f00684f35bf2d8d575.jpg"
+              class="bd-placeholder-img rounded-circle" alt="..." width="140" height="140">
+            <p class="text" id="hobby2">
+              <br>
+              ...
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="coloum">
+            <img src="https://i.pinimg.com/564x/16/4e/af/164eaf7001292201868c52f7f39aa6b5.jpg"
+              class="bd-placeholder-img rounded-circle" alt="..." width="140" height="140">
+            <p class="text" id="hobby3">
+              <br>
+              ...
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="coloum">
+            <img src="https://i.pinimg.com/564x/89/5b/75/895b7535d219f2760adbb7b3967da3d8.jpg"
+              class="bd-placeholder-img rounded-circle" alt="..." width="140" height="140">
+            <p class="text" id="hobby4">
+              <br>
+              ...
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="coloum">
+            <img src="https://i.pinimg.com/564x/ff/bd/7e/ffbd7e12043dc352dfe5f2cca7887f97.jpg"
+              class="bd-placeholder-img rounded-circle" alt="..." width="140" height="140">
+            <p class="text" id="hobby5">
+              <br>
+              ...
+            </p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="coloum">
+            <img src="https://i.pinimg.com/564x/32/a2/61/32a261f897e0768f49fdd551a2a6dad2.jpg"
+              class="bd-placeholder-img rounded-circle" alt="..." width="140" height="140">
+            <p class="text" id="hobby6">
+              <br>
+              ...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
