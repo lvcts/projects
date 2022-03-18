@@ -16,13 +16,10 @@
     <div class="container-fluid"></div>
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Tugas PWD
-            </a>
+            <span class="navbar-brand mb-0 h1">TUGAS</span>
         </div>
     </nav>
-    <form class="position-absolute top-50 start-50 translate-middle border rounded  " style="padding: 3vw;" action="halaman2.php" method="$_GET">
+    <form class="position-absolute top-50 start-50 translate-middle border rounded  " style="padding: 3vw;" action="halaman2.php#script" method="POST">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label" name="email">Email address</label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
