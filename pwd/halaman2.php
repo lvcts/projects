@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Halaman 2</title>
+
 </head>
 
 <body>
@@ -18,12 +19,7 @@
             <div class="container-fluid">
                 <span class="navbar-brand mb-0 h1">
                     <p class="h3">
-                        <script lang="php">
-                            if (isset($_POST['submit'])) {
-                                $email = $_POST['email'];
-                                echo $email;
-                            }
-                        </script>
+                        <?= $_POST["email"] ?>
                     </p>
                 </span>
             </div>
@@ -35,12 +31,19 @@
                 </a>
                 <h1 class="display-4">Selamat Datang Kembali User
                 </h1>
-                <p class="lead">Ini merupakan aplikasi sederhana yang menyajikan tentang
-                    <a href="halaman5.php">baca lengkap</a>
-                </p>
+                <a href="halaman2.php?halaman=halaman5">Intro
+                </a>
+                <?php
+                if (isset($_GET["halaman"])) {
+                    if ($_GET['halaman'] == "halaman5") {
+                        include "halaman5.php";
+                    }
+                }
+                ?>
+
             </div>
         </div>
-        <table class="table">
+        <table class="table" id="tabel1">
             <thead>
                 <tr>
                     <th scope="col">No. </th>
@@ -70,7 +73,15 @@
                 </tr>
             </tbody>
         </table>
-        <a href="halaman4.php">Lihat lebih banyak tabel</a>
+        <a href="halaman2.php?halaman=halaman4" id="link">Lihat lebih banyak tabel
+            <?php
+            if (isset($_GET["halaman"])) {
+                if ($_GET['halaman'] == "halaman4") {
+                    include "halaman4.php";
+                }
+            }
+            ?>
+        </a>
         <div class="container " style="padding: 5vw 20vw 5vw 20vw">
             <div class="list-group">
                 <a href="halaman1.php" class="list-group-item list-group-item-action" aria-current="true">
