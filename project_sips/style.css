@@ -1,0 +1,27 @@
+#kolom1{
+    width: 408px;
+    height: 714px;
+    left: 54px;
+    top: 310px;
+    border-radius: 14px;
+
+}
+#kolom2{
+   width: 916px;
+   height: 564px;
+   left: 491px;
+   top: 307px;
+   border-radius: 14px;
+}
+@media screen and (max-width:1000px) and (min-width: 500px) {
+
+    #kolom1 {
+        width: auto;
+        float: none;
+    }
+
+    #kolom2 {
+        width: auto;
+        float: none;
+    }
+}
